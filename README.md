@@ -77,3 +77,5 @@ Then, execute the file in your command line:
 `sqlite3 pets_database.db < 02_add_column_to_cats.sql`. 
 
 2 . Confirm that your execution of the `.sql` file worked by entering into your database in the terminal with the `sqlite3 pets_database.db` command. Once there, execute the `.schema` command and you should see that the schema of the Cats table does include the `breed` column. 
+
+<a href='https://learn.co/lessons/sql-databases-and-text-editors-readme' data-visibility='hidden'>View this lesson on Learn.co</a>
