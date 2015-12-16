@@ -37,7 +37,7 @@ CREATE TABLE cats (
 
 `sqlite3 pets_database.db < 01_create_cats_table.sql`
 
-*Note:** If running the above command give you an error that the Cats table already exists, that means you created a table with that name in a previous exercise. You can remove your old table with:
+*Note:** If running the above command gives you an error that the Cats table already exists, that means you created a table with that name in a previous exercise. You can remove your old table with:
 
 ```sql
 sqlite3> DROP TABLE cats;
@@ -48,7 +48,7 @@ sqlite3> DROP TABLE cats;
 Let's confirm that the above execution of the SQL commands in our `.sql` file, we can do the following. 
 
 1. In your terminal, enter into your Pets Database with the `sqlite3 pets_database.db` command. 
-2. Run the following `.schema;` command. You should see the following schema printed out, confirming that we did in fact create our Cats table successfully. 
+2. Run the following `.schema` command. You should see the following schema printed out, confirming that we did in fact create our Cats table successfully. 
 
 ```sql
 CREATE TABLE cats (
@@ -78,4 +78,4 @@ Then, execute the file in your command line:
 
 2 . Confirm that your execution of the `.sql` file worked by entering into your database in the terminal with the `sqlite3 pets_database.db` command. Once there, execute the `.schema` command and you should see that the schema of the Cats table does include the `breed` column. 
 
-<a href='https://learn.co/lessons/sql-databases-and-text-editors-readme' data-visibility='hidden'>View this lesson on Learn.co</a>
+<a href='https://learn.co/lessons/databases-and-text-editors' data-visibility='hidden'>View this lesson on Learn.co</a>
