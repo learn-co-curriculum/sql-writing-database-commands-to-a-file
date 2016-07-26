@@ -37,18 +37,17 @@ CREATE TABLE cats (
 
 `sqlite3 pets_database.db < 01_create_cats_table.sql`
 
-*Note:** If running the above command gives you an error that the Cats table already exists, that means you created a table with that name in a previous exercise. You can remove your old table with:
-
+**Note:** If running the above command gives you an error that the Cats table already exists, that means you created a table with that name in a previous exercise. You can remove your old table in the sqlite prompt with:
 ```sql
 sqlite3> DROP TABLE cats;
 ```
 
 ### Confirming Our SQL Execution 
 
-Let's confirm that the above execution of the SQL commands in our `.sql` file, we can do the following. 
+Let's confirm that the above execution of the SQL commands in our `.sql` file worked. To do so:
 
 1. In your terminal, enter into your Pets Database with the `sqlite3 pets_database.db` command. 
-2. Run the following `.schema` command. You should see the following schema printed out, confirming that we did in fact create our Cats table successfully. 
+2. Then run the `.schema` command. You should see the following schema printed out, confirming that we did in fact create our Cats table successfully. 
 
 ```sql
 CREATE TABLE cats (
@@ -64,18 +63,15 @@ CREATE TABLE cats (
 
 To carry out any subsequent actions on this database––adding a column to the cats table, dropping that table, creating a new table––we can create new `.sql` files in the text editor and execute them in the same way as above. Let's give it a shot. 
 
-1 . To add a column to our cats table:
+1. To add a column to our cats table:
 
-Create a file `02_add_column_to_cats.sql` and fill it out with:
+  Create a file named `02_add_column_to_cats.sql` and fill it out with:
+  ```sql
+  ALTER TABLE cats ADD COLUMN breed TEXT;
+  ```
+  Then, execute the file in your command line:
+  `sqlite3 pets_database.db < 02_add_column_to_cats.sql`. 
 
-```sql
-ALTER TABLE cats ADD COLUMN breed TEXT;
-```
-
-Then, execute the file in your command line:
-
-`sqlite3 pets_database.db < 02_add_column_to_cats.sql`. 
-
-2 . Confirm that your execution of the `.sql` file worked by entering into your database in the terminal with the `sqlite3 pets_database.db` command. Once there, execute the `.schema` command and you should see that the schema of the Cats table does include the `breed` column. 
+2. Confirm that your execution of the `.sql` file worked by entering into your database in the terminal with the `sqlite3 pets_database.db` command. Once there, execute the `.schema` command and you should see that the schema of the Cats table does include the `breed` column.
 
 <a href='https://learn.co/lessons/databases-and-text-editors' data-visibility='hidden'>View this lesson on Learn.co</a>
