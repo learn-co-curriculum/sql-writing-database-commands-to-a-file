@@ -37,7 +37,8 @@ CREATE TABLE cats (
 
 `sqlite3 pets_database.db < 01_create_cats_table.sql`
 
-**Note:** If running the above command gives you an error that the Cats table already exists, that means you created a table with that name in a previous exercise. You can remove your old table in the sqlite prompt with:
+**Note:** If running the above command gives you an error that the Cats table already exists, that means you created a table with that name in a previous exercise. You can enter into your Pets Database with the sqlite3 pets_database.db command and then remove your old table in the sqlite prompt with:
+
 ```sql
 sqlite3> DROP TABLE cats;
 ```
