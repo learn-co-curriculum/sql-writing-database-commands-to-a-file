@@ -7,6 +7,8 @@
 
 ## Writing SQL in a Text Editor
 
+Hello everyone!
+
 Up until now, we've been executing our SQL commands directly in the terminal. It is likely, however, that you will find yourself writing SQL in a file and executing that file in the context of your database. The more complex our databases become, the more tables we add and the more advanced the queries we run against them, the harder it will become to keep track of it all in the `sqlite3` prompt in our terminal. 
 
 SQL is a programming language like any other, so we can write SQL in our text editor and execute it. This allows us to keep better track of our SQL code, including the SQL statements that create tables and query data from those tables. 
