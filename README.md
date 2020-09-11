@@ -36,7 +36,7 @@ together in the following code along.
 
 **Once you create your database, exit the sqlite prompt with the `.quit` command.**
 
-Open up a text editor (such as Learn IDE) and create and save a file
+Open up a text editor and create and save a file
 `01_create_cats_table.sql`. In this file, write your create statement:
 
 ```sql
@@ -105,5 +105,3 @@ it a shot.
    database in the terminal with the `sqlite3 pets_database.db` command. Once
    there, execute the `.schema` command and you should see that the schema of
    the Cats table does include the `breed` column.
-
-<a href='https://learn.co/lessons/databases-and-text-editors' data-visibility='hidden'>View this lesson on Learn.co</a>
