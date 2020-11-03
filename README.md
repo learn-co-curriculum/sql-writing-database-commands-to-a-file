@@ -36,8 +36,9 @@ together in the following code along.
 
 **Once you create your database, exit the sqlite prompt with the `.quit` command.**
 
-Open up a text editor and create and save a file
-`01_create_cats_table.sql`. In this file, write your create statement:
+Open up a text editor and create and save a file `01_create_cats_table.sql`;
+make sure the new file is saved in the same directory where you created the
+database. In this file, write your create statement:
 
 ```sql
 CREATE TABLE cats (
@@ -47,7 +48,7 @@ CREATE TABLE cats (
 );
 ```
 
-2 . Execute that file in the command line. *Before running the below command,
+2 . Execute that file in the command line. *Before running the command below,
 make sure that you've exited the SQLite prompt that you were in earlier when you
 created the database.*
 
@@ -55,12 +56,10 @@ created the database.*
 
 **Note:** If running the above command gives you an error that the Cats table
 already exists, that means you created a table with that name in a previous
-exercise. You can enter into your Pets Database with the sqlite3
-pets_database.db command and then remove your old table in the SQLite prompt
-with:
+exercise. You can enter into your Pets Database with the `sqlite3 pets_database.db command` and then remove your old table in the SQLite prompt with:
 
 ```sql
-sqlite3> DROP TABLE cats;
+DROP TABLE cats;
 ```
 
 ### Confirming Our SQL Execution
@@ -68,10 +67,11 @@ sqlite3> DROP TABLE cats;
 Let's confirm that the above execution of the SQL commands in our `.sql` file
 worked. To do so:
 
-1. In your terminal, enter into your Pets Database with the `sqlite3
-   pets_database.db` command.
-2. Then run the `.schema` command. You should see the following schema printed
-   out, confirming that we did, in fact, create our Cats table successfully.
+1 . In your terminal, enter into your Pets Database with the `sqlite3
+pets_database.db` command.
+
+2 . Then run the `.schema` command. You should see the following schema printed
+out, confirming that we did, in fact, create our Cats table successfully.
 
 ```sql
 CREATE TABLE cats (
@@ -85,23 +85,23 @@ CREATE TABLE cats (
 
 ### Operating on our Database from the Text Editor
 
-To carry out any subsequent actions on this database––adding a column to the
-cats table, dropping that table, creating a new table––we can create new `.sql`
+To carry out any subsequent actions on this database &mdash; adding a column to the
+cats table, dropping that table, creating a new table &mdash; we can create new `.sql`
 files in the text editor and execute them in the same way as above. Let's give
 it a shot.
 
-1. To add a column to our cats table:
+1 . To add a column to our cats table:
 
-  Create a file named `02_add_column_to_cats.sql` and fill it out with:
+Create a file named `02_add_column_to_cats.sql` and fill it out with:
 
-  ```sql
-  ALTER TABLE cats ADD COLUMN breed TEXT;
-  ```
-  
-  Then, execute the file in your command line:
-  `sqlite3 pets_database.db < 02_add_column_to_cats.sql`.
+```sql
+ALTER TABLE cats ADD COLUMN breed TEXT;
+```
 
-2. Confirm that your execution of the `.sql` file worked by entering into your
-   database in the terminal with the `sqlite3 pets_database.db` command. Once
-   there, execute the `.schema` command and you should see that the schema of
-   the Cats table does include the `breed` column.
+Then, execute the file in your command line
+`sqlite3 pets_database.db < 02_add_column_to_cats.sql`.
+
+2 . Confirm that your execution of the `.sql` file worked by entering into your
+database in the terminal with the `sqlite3 pets_database.db` command. Once
+there, execute the `.schema` command and you should see that the schema of the
+Cats table does include the `breed` column.
