@@ -98,8 +98,11 @@ Create a file named `02_add_column_to_cats.sql` and fill it out with:
 ALTER TABLE cats ADD COLUMN breed TEXT;
 ```
 
-Then, execute the file in your command line
-`sqlite3 pets_database.db < 02_add_column_to_cats.sql`.
+Then, execute the file in your command line:
+
+```sh
+sqlite3 pets_database.db < 02_add_column_to_cats.sql
+```
 
 2 . Confirm that your execution of the `.sql` file worked by entering into your
 database in the terminal with the `sqlite3 pets_database.db` command. Once
