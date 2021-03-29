@@ -56,7 +56,7 @@ created the database.*
 
 **Note:** If running the above command gives you an error that the Cats table
 already exists, that means you created a table with that name in a previous
-exercise. You can enter into your Pets Database with the `sqlite3 pets_database.db command` and then remove your old table in the SQLite prompt with:
+exercise. You can enter into your Pets Database with the `sqlite3 pets_database.db` command and then remove your old table in the SQLite prompt with:
 
 ```sql
 DROP TABLE cats;
