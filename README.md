@@ -48,6 +48,13 @@ CREATE TABLE cats (
 );
 ```
 
+> **Note**: You won't be able to view the `pets_database.db` file directly 
+> in your text editor. This file is the binary representation of the database. 
+> You can think of this like a .jpg file. It won't open up in a text editor, 
+> but it does open up in the image viewer app. It is the same way for .db 
+> files. They won't open in your editor, but they can be read by the 
+> appropriate database engine.
+
 2 . Execute that file in the command line. *Before running the command below,
 make sure that you've exited the SQLite prompt that you were in earlier when you
 created the database.*
@@ -56,7 +63,8 @@ created the database.*
 
 **Note:** If running the above command gives you an error that the Cats table
 already exists, that means you created a table with that name in a previous
-exercise. You can enter into your Pets Database with the `sqlite3 pets_database.db` command and then remove your old table in the SQLite prompt with:
+exercise. You can enter into your Pets Database with the `sqlite3 pets_database.db` 
+command and then remove your old table in the SQLite prompt with:
 
 ```sql
 DROP TABLE cats;
