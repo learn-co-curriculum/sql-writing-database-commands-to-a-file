@@ -23,7 +23,7 @@ tables.
 To write SQL in our text editor and execute that SQL against a specific
 database, we'll create files in our text editor that have the `.sql` extension.
 These files will contain valid SQL code. Then, we can execute these files
-*against our database* in the command line. We'll take a look at this process
+_against our database_ in the command line. We'll take a look at this process
 together in the following code along.
 
 ## Code Along
@@ -32,7 +32,9 @@ together in the following code along.
 
 1 . In the terminal, create a database with the following command:
 
-`sqlite3 pets_database.db`
+```sh
+sqlite3 pets_database.db
+```
 
 **Once you create your database, exit the sqlite prompt with the `.quit` command.**
 
@@ -48,22 +50,24 @@ CREATE TABLE cats (
 );
 ```
 
-> **Note**: You won't be able to view the `pets_database.db` file directly 
-> in your text editor. This file is the binary representation of the database. 
-> You can think of this like a .jpg file. It won't open up in a text editor, 
-> but it does open up in the image viewer app. It is the same way for .db 
-> files. They won't open in your editor, but they can be read by the 
-> appropriate database engine.
-
-2 . Execute that file in the command line. *Before running the command below,
+2 . Execute that file in the command line. _Before running the command below,
 make sure that you've exited the SQLite prompt that you were in earlier when you
-created the database.*
+created the database._
 
-`sqlite3 pets_database.db < 01_create_cats_table.sql`
+```sh
+sqlite3 pets_database.db < 01_create_cats_table.sql
+```
+
+> **Note**: You won't be able to view the `pets_database.db` file directly
+> in your text editor. This file is the binary representation of the database.
+> You can think of this like a .jpg file. It won't open up in a text editor,
+> but it does open up in the image viewer app. It is the same way for .db
+> files. They won't open in your editor, but they can be read by the
+> appropriate database engine.
 
 **Note:** If running the above command gives you an error that the Cats table
 already exists, that means you created a table with that name in a previous
-exercise. You can enter into your Pets Database with the `sqlite3 pets_database.db` 
+exercise. You can enter into your Pets Database with the `sqlite3 pets_database.db`
 command and then remove your old table in the SQLite prompt with:
 
 ```sql
@@ -75,8 +79,8 @@ DROP TABLE cats;
 Let's confirm that the above execution of the SQL commands in our `.sql` file
 worked. To do so:
 
-1 . In your terminal, enter into your Pets Database with the `sqlite3
-pets_database.db` command.
+1 . In your terminal, enter into your Pets Database with the
+`sqlite3 pets_database.db` command.
 
 2 . Then run the `.schema` command. You should see the following schema printed
 out, confirming that we did, in fact, create our Cats table successfully.
